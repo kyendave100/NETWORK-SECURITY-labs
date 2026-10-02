@@ -65,11 +65,17 @@ Both LANs worked internally, and the hub/switch behavior difference was directly
 
 ## Screenshots / Evidence
 
-*(Add screenshots here — suggested: full topology view, `show ip interface brief` output, successful cross-network ping result)*
+**Network topology:**
+![Network topology](topology.png)
 
-- `evidence/topology.png`
-- `evidence/router-interfaces.png`
-- `evidence/cross-network-ping.png`
+**Router interface configuration:**
+![Router configuration](routerconfig.png)
+
+**Cross-network ping request:**
+![Ping request](ping-request.png)
+
+**Cross-network ping reply:**
+![Ping reply](ping-reply.png)
 
 ## What I Learned
 
@@ -82,5 +88,5 @@ Both LANs worked internally, and the hub/switch behavior difference was directly
 Early on, while calculating one of the `/29` subnets, I first wrote out the usable range incorrectly (stopping two addresses short of the actual range) before catching and correcting the error by re-checking the block boundaries.
 
 ## Improvements / Future Work
-
+If this were a real organization's network, I'd want to add internet access and deploy actual servers (web, email, file sharing) so the network does real work, not just connects PCs to each other. I'd also add firewalls to control and filter traffic between zones, and look at encrypting communications and securing device configurations, rather than leaving everything in plain, unprotected form.
 If this were a real organization's network, I'd want to add internet access and deploy actual servers (web, email, file sharing) so the network does real work, not just connects PCs to each other. I'd also add firewalls to control and filter traffic between zones, and look at encrypting communications and securing device configurations, rather than leaving everything in plain, unprotected form.
