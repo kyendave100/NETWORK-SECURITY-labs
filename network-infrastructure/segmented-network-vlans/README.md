@@ -158,18 +158,41 @@ HR, Finance, and IT are isolated from each other by VLANs, share two switches th
 
 ## Screenshots / Evidence
 
-*TODO: screenshots still to be taken from the saved files, then added with `![description](screenshots/name.png)` once uploaded.*
+**Network topology (router-on-a-stick)**
 
-| Screenshot | From which lab |
-|---|---|
-| Topology | `day32-inter-vlan.pkt` |
-| `show vlan brief` on both switches | `day32-inter-vlan.pkt` |
-| `show interfaces trunk` | `day32-inter-vlan.pkt` |
-| `show ip interface brief` and `show ip route` on the router | `day32-inter-vlan.pkt` |
-| Cross-VLAN ping with TTL 127 | `day32-inter-vlan.pkt` |
-| The Simulation-mode capture of the same-switch path | `day32-inter-vlan.pkt` |
-| Topology and `show ip route` with routing on and off | `day33-layer3-switch.pkt` |
-| The wrong-VLAN fault and its fix | `day33-layer3-switch.pkt` |
+![Network topology: two switches, a router, and nine PCs](screenshots/topology32.png)
+
+**VLANs on both switches**
+
+![show vlan brief on SW1](screenshots/sw1-show-vlan-brief.png)
+
+![show vlan brief on SW2](screenshots/sw2-show-vlan-brief.png)
+
+**Router subinterfaces**
+
+![show ip interface brief on the router](screenshots/router-show-ip-interface-brief.png)
+
+**Inter-VLAN ping through the router (TTL 127)**
+
+![Ping from an HR PC to a Finance PC](screenshots/ping-hr-to-finance-ttl127.png)
+
+**The path in Simulation mode (hairpin)**
+
+![Simulation mode: the packet goes SW2, SW1, router, SW1, SW2](screenshots/simulation-hairpin-path.png)
+
+**Layer 3 switch: routing on, then off**
+
+![show ip route with routing on](screenshots/l3sw-show-ip-route-on.png)
+
+![show ip route with routing off](screenshots/l3sw-show-ip-route-off.png)
+
+**Wrong-VLAN fault: symptom, evidence, and fix**
+
+![Symptom: the PC cannot reach its gateway or neighbor](screenshots/fault-wrong-vlan-symptom.png)
+
+![Evidence: show vlan brief](screenshots/fault-wrong-vlan-evidence.png)
+
+![Fixed: show vlan brief after the fix](screenshots/fault-wrong-vlan-fixed.png)
 
 ## What I Learned
 
