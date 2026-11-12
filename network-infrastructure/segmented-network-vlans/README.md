@@ -49,8 +49,7 @@ Cisco Packet Tracer, 2960 switches, a 2901 router, a 3560 multilayer switch, 802
 
 | File | What it is |
 |---|---|
-| `day28-29-vlans.pkt` | one switch, two VLANs, and the troubleshooting drills |
-| `day30-three-vlan-plan.pkt` | the three-VLAN plan built on one switch |
+
 | `day31-trunk.pkt` | two switches joined by a trunk |
 | `day32-inter-vlan.pkt` | router-on-a-stick |
 | `day33-layer3-switch.pkt` | the Layer 3 switch version |
